@@ -3,7 +3,7 @@
   "description": "Minify css with clean-css.",
   "version": "1.2.1",
   "repository": "murphydanger/gulp-minify-css",
-  "author": "Jonathan Pollack <jonathan@gnobel.com> (gnobel.com)",
+  "author": "Murphy Danger <jonathan@gnobel.com> (github.com/murphydanger)",
   "contributors": [
     "Shinnosuke Watanabe <snnskwtnb@gmail.com> (github.com/shinnn)"
   ],

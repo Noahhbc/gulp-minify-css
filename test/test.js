@@ -1,4 +1,3 @@
-/*eslint-disable max-len */
 'use strict';
 
 const {createServer} = require('http');
@@ -133,7 +132,7 @@ describe('gulp-minify-css source map', function() {
 
     const write = sourceMaps.write()
     .on('data', file => {
-      const expected = '/*! header */p{text-align:center}b,p{color:#0ff}\n';
+      const expected = '/*! header */p{text-align:center}b,p{color:#0ff}\n\n';
       expect(String(file.contents).replace(/\/\*#.*/, '')).to.be.equal(expected);
       expect(file.sourceMap.mappings).to.be.equal('aAAA,EACE,WAAY,OCDd,ECIA,EDJI,MAAO');
 

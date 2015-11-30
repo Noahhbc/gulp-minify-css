@@ -21,7 +21,7 @@
     "index.js"
   ],
   "scripts": {
-    "pretest": "eslint --config node_modules/@shinnn/eslintrc-node/rc.json --env mocha index.js test",
+    "pretest": "eslint --fix --config @shinnn/node-legacy --env mocha index.js test",
     "test": "node --harmony_destructuring node_modules/mocha/bin/_mocha --full-trace",
     "test-dot": "node --harmony_destructuring node_modules/mocha/bin/_mocha --reporter dot --full-trace",
     "coverage": "node --harmony_destructuring node_modules/istanbul/lib/cli cover _mocha -- --full-trace",
@@ -33,19 +33,19 @@
     "object-assign": "^4.0.1",
     "readable-stream": "^2.0.0",
     "vinyl-bufferstream": "^1.0.1",
-    "vinyl-sourcemaps-apply": "^0.1.4"
+    "vinyl-sourcemaps-apply": "^0.2.0"
   },
   "devDependencies": {
-    "@shinnn/eslintrc-node": "^1.0.2",
+    "@shinnn/eslint-config-node-legacy": "^1.0.0",
     "chai": "^3.0.0",
-    "eslint": "^0.23.0",
+    "eslint": "^1.10.2",
     "from2-string": "^1.0.2",
     "gulp-sourcemaps": "^1.5.2",
     "gulp-stylus": "^2.0.5",
-    "istanbul": "^0.3.15",
+    "istanbul": "^0.4.1",
     "istanbul-coveralls": "^1.0.3",
     "mocha": "^2.2.5",
-    "stream-combiner2": "^1.0.2",
-    "vinyl": "^0.5.0"
+    "stream-combiner2": "^1.1.1",
+    "vinyl": "^1.1.0"
   }
 }
